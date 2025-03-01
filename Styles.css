@@ -338,6 +338,13 @@ p{
     }
 }
 
+@media only screen and (max-width: 768px)
+{   .work-1-tags{
+    display: none;
+    }
+    }
+}
+
 @media only screen and (max-width: 481px)
 {   .topbutton #canvas{
     display: none;
