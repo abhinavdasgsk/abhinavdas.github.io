@@ -36,11 +36,11 @@
         <div class="hero-container">
             <div class="hero-item hero-item-1"><h2>Hi &#128075 I am <span class = "auto-type"></span></h2></div>
             <div class="hero-item hero-item-2"><p>Currently UX Teaching assistant <span class="Internshala">@Internshala</span>. Prev. UX Design intern <span class="Woro">@Woro</span>. Prev. UX Research intern <span class="IIT">@UE-HCI IIT Guwahati</span></p></div>
-            <div class="hero-button"><a href="Resume.pdf" download="Abhinav's resume" target="_blank">DOWNLOAD CV</a></div>
+            <div class="hero-button"><a href="Resume.pdf" download="Abhinav's resume" target="_blank">VIEW RESUME</a></div>
         </div>
     </div>
     <div class = "work-container">
-
+        
         <div class="work-1" id="work-begin">
             <h2>Fox: Reducing food wastage through a FDA</h2>
             <div class="work-1-tags"><button class="tag-2">ux case study</button></div>
@@ -85,6 +85,7 @@
             <p>Opus is an app that focuses on team collaboration with all the features a team leader and a member might need to interact with their entire team.</p>
             </div>
         </div>
+    
         
        <div class="block6" id="connect">
             <h2>Let's connect</h2>
@@ -101,16 +102,26 @@
             <p>Copyright © 2024; Designed by Abhinav Das ;)</p>
             <!-- Big Thanks to Matt Boldt for the text effect! -->
         </div>
-            <a class="topbutton" href="#"><i class="fa-solid fa-angle-up"></i></a>
-        
-        
-        
-        
-        
+            <!--<a class="topbutton" href="#"><i class="fa-solid fa-angle-up"></i></a>-->
+            <a class="topbutton" href="#"><canvas id="canvas"></canvas></a>
+                
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     
     <script>
         var typed = new Typed(".auto-type",{strings : ["abhinav das","a designer", "an HCI enthusiast", "an artist", "abhinav das"], typeSpeed : 50, backSpeed : 50, looped:true})
+    </script>
+    
+    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <script>
+      const r = new rive.Rive({
+        src: "hi.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        stateMachines: "State Machine 1",
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
+      });
     </script>
 </body>
