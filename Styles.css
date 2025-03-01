@@ -290,6 +290,17 @@ p{
     transition: 0.3s ease 0s;
 }
 
+.topbutton #canvas{
+    position: fixed; 
+    bottom: 24px;
+    right: 32px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .topbutton i:hover{
     transform: translateY(-10px);
     border-radius: 30px;
@@ -326,4 +337,3 @@ p{
     font-size: 12px;
     }
 }
-
